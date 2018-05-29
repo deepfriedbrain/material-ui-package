@@ -458,7 +458,7 @@ DropDownMenu.defaultProps = {
 DropDownMenu.contextTypes = {
   muiTheme: _propTypes2.default.object.isRequired
 };
-DropDownMenu.propTypes = process.env.NODE_ENV !== "production" ? {
+process.env.NODE_ENV !== "production" ? DropDownMenu.propTypes = {
   /**
    * This is the point on the anchor that the popover's
    * `targetOrigin` will attach to.
@@ -582,5 +582,5 @@ DropDownMenu.propTypes = process.env.NODE_ENV !== "production" ? {
    * If provided, the menu will be a controlled component.
    */
   value: _propTypes2.default.any
-} : {};
+} : void 0;
 exports.default = DropDownMenu;

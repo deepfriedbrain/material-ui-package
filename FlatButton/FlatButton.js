@@ -253,7 +253,7 @@ FlatButton.defaultProps = {
 FlatButton.contextTypes = {
   muiTheme: _propTypes2.default.object.isRequired
 };
-FlatButton.propTypes = process.env.NODE_ENV !== "production" ? {
+process.env.NODE_ENV !== "production" ? FlatButton.propTypes = {
   /**
    * Color of button when mouse is not hovering over it.
    */
@@ -353,5 +353,5 @@ FlatButton.propTypes = process.env.NODE_ENV !== "production" ? {
    * Override the inline-styles of the root element.
    */
   style: _propTypes2.default.object
-} : {};
+} : void 0;
 exports.default = FlatButton;

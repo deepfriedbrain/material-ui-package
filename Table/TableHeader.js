@@ -205,7 +205,7 @@ TableHeader.defaultProps = {
 TableHeader.contextTypes = {
   muiTheme: _propTypes2.default.object.isRequired
 };
-TableHeader.propTypes = process.env.NODE_ENV !== "production" ? {
+process.env.NODE_ENV !== "production" ? TableHeader.propTypes = {
   /**
    * Controls whether or not header rows should be
    * adjusted for a checkbox column. If the select all
@@ -248,5 +248,5 @@ TableHeader.propTypes = process.env.NODE_ENV !== "production" ? {
    * Override the inline-styles of the root element.
    */
   style: _propTypes2.default.object
-} : {};
+} : void 0;
 exports.default = TableHeader;

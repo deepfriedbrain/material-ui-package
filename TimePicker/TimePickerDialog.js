@@ -192,7 +192,7 @@ TimePickerDialog.defaultProps = {
 TimePickerDialog.contextTypes = {
   muiTheme: _propTypes2.default.object.isRequired
 };
-TimePickerDialog.propTypes = process.env.NODE_ENV !== "production" ? {
+process.env.NODE_ENV !== "production" ? TimePickerDialog.propTypes = {
   autoOk: _propTypes2.default.bool,
   bodyStyle: _propTypes2.default.object,
   cancelLabel: _propTypes2.default.node,
@@ -203,5 +203,5 @@ TimePickerDialog.propTypes = process.env.NODE_ENV !== "production" ? {
   onDismiss: _propTypes2.default.func,
   onShow: _propTypes2.default.func,
   style: _propTypes2.default.object
-} : {};
+} : void 0;
 exports.default = TimePickerDialog;

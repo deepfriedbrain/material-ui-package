@@ -95,11 +95,11 @@ CardExpandable.defaultProps = {
   closeIcon: _react2.default.createElement(_keyboardArrowDown2.default, null),
   openIcon: _react2.default.createElement(_keyboardArrowUp2.default, null)
 };
-CardExpandable.propTypes = process.env.NODE_ENV !== "production" ? {
+process.env.NODE_ENV !== "production" ? CardExpandable.propTypes = {
   closeIcon: _propTypes2.default.node,
   expanded: _propTypes2.default.bool,
   onExpanding: _propTypes2.default.func.isRequired,
   openIcon: _propTypes2.default.node,
   style: _propTypes2.default.object
-} : {};
+} : void 0;
 exports.default = CardExpandable;

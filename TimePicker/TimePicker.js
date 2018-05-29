@@ -218,7 +218,7 @@ TimePicker.defaultProps = {
 TimePicker.contextTypes = {
   muiTheme: _propTypes2.default.object.isRequired
 };
-TimePicker.propTypes = process.env.NODE_ENV !== "production" ? {
+process.env.NODE_ENV !== "production" ? TimePicker.propTypes = {
   /**
    * If true, automatically accept and close the picker on set minutes.
    */
@@ -293,5 +293,5 @@ TimePicker.propTypes = process.env.NODE_ENV !== "production" ? {
    * Sets the time for the Time Picker programmatically.
    */
   value: _propTypes2.default.object
-} : {};
+} : void 0;
 exports.default = TimePicker;

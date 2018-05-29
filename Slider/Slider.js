@@ -765,7 +765,7 @@ Slider.defaultProps = {
 Slider.contextTypes = {
   muiTheme: _propTypes2.default.object.isRequired
 };
-Slider.propTypes = process.env.NODE_ENV !== "production" ? {
+process.env.NODE_ENV !== "production" ? Slider.propTypes = {
   /**
    * The axis on which the slider will slide.
    */
@@ -848,5 +848,5 @@ Slider.propTypes = process.env.NODE_ENV !== "production" ? {
    * The value of the slider.
    */
   value: valueInRangePropType
-} : {};
+} : void 0;
 exports.default = Slider;

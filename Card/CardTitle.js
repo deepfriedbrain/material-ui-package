@@ -124,7 +124,7 @@ CardTitle.muiName = 'CardTitle';
 CardTitle.contextTypes = {
   muiTheme: _propTypes2.default.object.isRequired
 };
-CardTitle.propTypes = process.env.NODE_ENV !== "production" ? {
+process.env.NODE_ENV !== "production" ? CardTitle.propTypes = {
   /**
    * If true, a click on this card component expands the card.
    */
@@ -169,5 +169,5 @@ CardTitle.propTypes = process.env.NODE_ENV !== "production" ? {
    * Override the inline-styles of the title.
    */
   titleStyle: _propTypes2.default.object
-} : {};
+} : void 0;
 exports.default = CardTitle;

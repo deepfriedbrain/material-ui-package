@@ -229,7 +229,7 @@ DatePickerDialog.defaultProps = {
 DatePickerDialog.contextTypes = {
   muiTheme: _propTypes2.default.object.isRequired
 };
-DatePickerDialog.propTypes = process.env.NODE_ENV !== "production" ? {
+process.env.NODE_ENV !== "production" ? DatePickerDialog.propTypes = {
   DateTimeFormat: _propTypes2.default.func,
   animation: _propTypes2.default.func,
   autoOk: _propTypes2.default.bool,
@@ -252,5 +252,5 @@ DatePickerDialog.propTypes = process.env.NODE_ENV !== "production" ? {
   shouldDisableDate: _propTypes2.default.func,
   style: _propTypes2.default.object,
   utils: _propTypes2.default.object
-} : {};
+} : void 0;
 exports.default = DatePickerDialog;

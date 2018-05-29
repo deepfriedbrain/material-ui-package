@@ -483,7 +483,7 @@ AutoComplete.defaultProps = {
 AutoComplete.contextTypes = {
   muiTheme: _propTypes2.default.object.isRequired
 };
-AutoComplete.propTypes = process.env.NODE_ENV !== "production" ? {
+process.env.NODE_ENV !== "production" ? AutoComplete.propTypes = {
   /**
    * Location of the anchor for the auto complete.
    */
@@ -618,7 +618,7 @@ AutoComplete.propTypes = process.env.NODE_ENV !== "production" ? {
    * Override the inline-styles of AutoComplete's TextField element.
    */
   textFieldStyle: _propTypes2.default.object
-} : {};
+} : void 0;
 
 
 AutoComplete.levenshteinDistance = function (searchText, key) {

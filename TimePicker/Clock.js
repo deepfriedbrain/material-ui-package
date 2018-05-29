@@ -229,10 +229,10 @@ Clock.defaultProps = {
 Clock.contextTypes = {
   muiTheme: _propTypes2.default.object.isRequired
 };
-Clock.propTypes = process.env.NODE_ENV !== "production" ? {
+process.env.NODE_ENV !== "production" ? Clock.propTypes = {
   format: _propTypes2.default.oneOf(['ampm', '24hr']),
   initialTime: _propTypes2.default.object,
   onChangeHours: _propTypes2.default.func,
   onChangeMinutes: _propTypes2.default.func
-} : {};
+} : void 0;
 exports.default = Clock;

@@ -173,7 +173,7 @@ function getStyles(props, context, state) {
     rightIconButton: {
       position: 'absolute',
       display: 'block',
-      top: twoLine ? 12 : singleAvatar ? 0 : 0,
+      top: twoLine ? 12 : singleAvatar ? 0 : 0, // original: top: twoLine ? 12 : singleAvatar ? 4 : 0,
       right: 4
     },
 
@@ -582,7 +582,7 @@ ListItem.defaultProps = {
 ListItem.contextTypes = {
   muiTheme: _propTypes2.default.object.isRequired
 };
-ListItem.propTypes = process.env.NODE_ENV !== "production" ? {
+process.env.NODE_ENV !== "production" ? ListItem.propTypes = {
   /**
    * If true, generate a nested-list-indicator icon when nested list
    * items are detected. Note that an indicator will not be created
@@ -734,5 +734,5 @@ ListItem.propTypes = process.env.NODE_ENV !== "production" ? {
    * Override the inline-styles of the root element.
    */
   style: _propTypes2.default.object
-} : {};
+} : void 0;
 exports.default = ListItem;

@@ -174,7 +174,7 @@ Card.defaultProps = {
   expanded: null,
   initiallyExpanded: false
 };
-Card.propTypes = process.env.NODE_ENV !== "production" ? {
+process.env.NODE_ENV !== "production" ? Card.propTypes = {
   /**
    * Can be used to render elements inside the Card.
    */
@@ -214,5 +214,5 @@ Card.propTypes = process.env.NODE_ENV !== "production" ? {
    * Override the inline-styles of the root element.
    */
   style: _propTypes2.default.object
-} : {};
+} : void 0;
 exports.default = Card;

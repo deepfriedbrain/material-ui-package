@@ -312,7 +312,7 @@ MenuItem.defaultProps = {
 MenuItem.contextTypes = {
   muiTheme: _propTypes2.default.object.isRequired
 };
-MenuItem.propTypes = process.env.NODE_ENV !== "production" ? {
+process.env.NODE_ENV !== "production" ? MenuItem.propTypes = {
   /**
    * Location of the anchor for the popover of nested `MenuItem`
    * elements.
@@ -388,5 +388,5 @@ MenuItem.propTypes = process.env.NODE_ENV !== "production" ? {
    * The value of the menu item.
    */
   value: _propTypes2.default.any
-} : {};
+} : void 0;
 exports.default = MenuItem;

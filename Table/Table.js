@@ -267,7 +267,7 @@ Table.defaultProps = {
 Table.contextTypes = {
   muiTheme: _propTypes2.default.object.isRequired
 };
-Table.propTypes = process.env.NODE_ENV !== "production" ? {
+process.env.NODE_ENV !== "production" ? Table.propTypes = {
   /**
    * Set to true to indicate that all rows should be selected.
    */
@@ -361,5 +361,5 @@ Table.propTypes = process.env.NODE_ENV !== "production" ? {
    * Override the inline-styles of the table's wrapper element.
    */
   wrapperStyle: _propTypes2.default.object
-} : {};
+} : void 0;
 exports.default = Table;

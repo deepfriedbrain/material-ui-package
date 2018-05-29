@@ -158,7 +158,7 @@ CardHeader.defaultProps = {
 CardHeader.contextTypes = {
   muiTheme: _propTypes2.default.object.isRequired
 };
-CardHeader.propTypes = process.env.NODE_ENV !== "production" ? {
+process.env.NODE_ENV !== "production" ? CardHeader.propTypes = {
   /**
    * If true, a click on this card component expands the card.
    */
@@ -221,5 +221,5 @@ CardHeader.propTypes = process.env.NODE_ENV !== "production" ? {
    * Override the inline-styles of the title.
    */
   titleStyle: _propTypes2.default.object
-} : {};
+} : void 0;
 exports.default = CardHeader;

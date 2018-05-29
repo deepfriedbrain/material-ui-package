@@ -314,8 +314,7 @@ var EnhancedButton = function (_Component) {
         fontWeight: 'inherit',
         position: 'relative', // This is needed so that ripples do not bleed past border radius.
         verticalAlign: href ? 'middle' : null,
-        zIndex: 1 // This is also needed so that (onTouch) ripples do not bleed past border radius.
-      }, style);
+        zIndex: 1 }, style);
 
       // Passing both background:none & backgroundColor can break due to object iteration order
       if (!mergedStyles.backgroundColor && !mergedStyles.background) {
@@ -379,7 +378,7 @@ EnhancedButton.defaultProps = {
 EnhancedButton.contextTypes = {
   muiTheme: _propTypes2.default.object.isRequired
 };
-EnhancedButton.propTypes = process.env.NODE_ENV !== "production" ? {
+process.env.NODE_ENV !== "production" ? EnhancedButton.propTypes = {
   centerRipple: _propTypes2.default.bool,
   children: _propTypes2.default.node,
   containerElement: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.element]),
@@ -403,5 +402,5 @@ EnhancedButton.propTypes = process.env.NODE_ENV !== "production" ? {
   touchRippleColor: _propTypes2.default.string,
   touchRippleOpacity: _propTypes2.default.number,
   type: _propTypes2.default.string
-} : {};
+} : void 0;
 exports.default = EnhancedButton;

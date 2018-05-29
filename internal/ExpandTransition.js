@@ -129,7 +129,7 @@ ExpandTransition.defaultProps = {
 ExpandTransition.contextTypes = {
   muiTheme: _propTypes2.default.object.isRequired
 };
-ExpandTransition.propTypes = process.env.NODE_ENV !== "production" ? {
+process.env.NODE_ENV !== "production" ? ExpandTransition.propTypes = {
   children: _propTypes2.default.node,
   enterDelay: _propTypes2.default.number,
   loading: _propTypes2.default.bool,
@@ -137,5 +137,5 @@ ExpandTransition.propTypes = process.env.NODE_ENV !== "production" ? {
   style: _propTypes2.default.object,
   transitionDelay: _propTypes2.default.number,
   transitionDuration: _propTypes2.default.number
-} : {};
+} : void 0;
 exports.default = ExpandTransition;

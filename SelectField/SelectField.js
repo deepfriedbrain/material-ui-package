@@ -175,7 +175,7 @@ SelectField.defaultProps = {
 SelectField.contextTypes = {
   muiTheme: _propTypes2.default.object.isRequired
 };
-SelectField.propTypes = process.env.NODE_ENV !== "production" ? {
+process.env.NODE_ENV !== "production" ? SelectField.propTypes = {
   /**
    * If true, the width will automatically be set according to the
    * items inside the menu.
@@ -315,5 +315,5 @@ SelectField.propTypes = process.env.NODE_ENV !== "production" ? {
    * If provided, the menu will be a controlled component.
    */
   value: _propTypes2.default.any
-} : {};
+} : void 0;
 exports.default = SelectField;

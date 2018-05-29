@@ -245,12 +245,10 @@ var Drawer = function (_Component) {
           transition: !this.state.swiping && _transitions2.default.easeOut(null, 'transform', null),
           backgroundColor: theme.color,
           overflow: 'auto',
-          WebkitOverflowScrolling: 'touch' // iOS momentum scrolling
-        },
+          WebkitOverflowScrolling: 'touch' },
         overlay: {
           zIndex: muiTheme.zIndex.drawerOverlay,
-          pointerEvents: this.state.open ? 'auto' : 'none' // Bypass mouse events when left nav is closing.
-        },
+          pointerEvents: this.state.open ? 'auto' : 'none' },
         rootWhenOpenRight: {
           left: 'auto',
           right: 0
@@ -405,7 +403,7 @@ Drawer.defaultProps = {
 Drawer.contextTypes = {
   muiTheme: _propTypes2.default.object.isRequired
 };
-Drawer.propTypes = process.env.NODE_ENV !== "production" ? {
+process.env.NODE_ENV !== "production" ? Drawer.propTypes = {
   /**
    * The contents of the `Drawer`
    */
@@ -478,5 +476,5 @@ Drawer.propTypes = process.env.NODE_ENV !== "production" ? {
    */
   zDepth: _propTypes4.default.zDepth
 
-} : {};
+} : void 0;
 exports.default = Drawer;

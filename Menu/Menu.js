@@ -577,7 +577,7 @@ var _initialiseProps = function _initialiseProps() {
   };
 };
 
-Menu.propTypes = process.env.NODE_ENV !== "production" ? {
+process.env.NODE_ENV !== "production" ? Menu.propTypes = {
   /**
    * If true, the width of the menu will be set automatically
    * according to the widths of its children,
@@ -687,5 +687,5 @@ Menu.propTypes = process.env.NODE_ENV !== "production" ? {
    * proper keyline increments (64px for desktop, 56px otherwise).
    */
   width: _propTypes4.default.stringOrNumber
-} : {};
+} : void 0;
 exports.default = Menu;

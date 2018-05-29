@@ -55,8 +55,7 @@ var rowsHeight = 24;
 function getStyles(props, context, state) {
   return {
     root: {
-      position: 'relative' // because the shadow has position: 'absolute'
-    },
+      position: 'relative' },
     textarea: {
       height: state.height,
       width: '100%',
@@ -230,7 +229,7 @@ EnhancedTextarea.defaultProps = {
 EnhancedTextarea.contextTypes = {
   muiTheme: _propTypes2.default.object.isRequired
 };
-EnhancedTextarea.propTypes = process.env.NODE_ENV !== "production" ? {
+process.env.NODE_ENV !== "production" ? EnhancedTextarea.propTypes = {
   defaultValue: _propTypes2.default.any,
   disabled: _propTypes2.default.bool,
   hintText: _propTypes2.default.string,
@@ -246,5 +245,5 @@ EnhancedTextarea.propTypes = process.env.NODE_ENV !== "production" ? {
   textareaStyle: _propTypes2.default.object,
   value: _propTypes2.default.string,
   valueLink: _propTypes2.default.object
-} : {};
+} : void 0;
 exports.default = EnhancedTextarea;

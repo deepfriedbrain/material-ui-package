@@ -157,10 +157,10 @@ var TransitionItem = function (_Component) {
 TransitionItem.contextTypes = {
   muiTheme: _propTypes2.default.object.isRequired
 };
-TransitionItem.propTypes = process.env.NODE_ENV !== "production" ? {
+process.env.NODE_ENV !== "production" ? TransitionItem.propTypes = {
   children: _propTypes2.default.node,
   style: _propTypes2.default.object
-} : {};
+} : void 0;
 
 
 function getStyles(props, context) {
@@ -436,7 +436,7 @@ var DialogInline = function (_Component2) {
 DialogInline.contextTypes = {
   muiTheme: _propTypes2.default.object.isRequired
 };
-DialogInline.propTypes = process.env.NODE_ENV !== "production" ? {
+process.env.NODE_ENV !== "production" ? DialogInline.propTypes = {
   actions: _propTypes2.default.node,
   actionsContainerClassName: _propTypes2.default.string,
   actionsContainerStyle: _propTypes2.default.object,
@@ -458,7 +458,7 @@ DialogInline.propTypes = process.env.NODE_ENV !== "production" ? {
   title: _propTypes2.default.node,
   titleClassName: _propTypes2.default.string,
   titleStyle: _propTypes2.default.object
-} : {};
+} : void 0;
 
 var Dialog = function (_Component3) {
   (0, _inherits3.default)(Dialog, _Component3);
@@ -497,7 +497,7 @@ Dialog.defaultProps = {
   modal: false,
   repositionOnUpdate: true
 };
-Dialog.propTypes = process.env.NODE_ENV !== "production" ? {
+process.env.NODE_ENV !== "production" ? Dialog.propTypes = {
   /**
    * Action buttons to display below the Dialog content (`children`).
    * This property accepts either a React element, or an array of React elements.
@@ -587,5 +587,5 @@ Dialog.propTypes = process.env.NODE_ENV !== "production" ? {
    * Overrides the inline-styles of the title's root container element.
    */
   titleStyle: _propTypes2.default.object
-} : {};
+} : void 0;
 exports.default = Dialog;

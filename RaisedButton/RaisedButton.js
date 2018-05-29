@@ -376,7 +376,7 @@ RaisedButton.defaultProps = {
 RaisedButton.contextTypes = {
   muiTheme: _propTypes2.default.object.isRequired
 };
-RaisedButton.propTypes = process.env.NODE_ENV !== "production" ? {
+process.env.NODE_ENV !== "production" ? RaisedButton.propTypes = {
   /**
    * Override the default background color for the button,
    * but not the default disabled background color
@@ -492,5 +492,5 @@ RaisedButton.propTypes = process.env.NODE_ENV !== "production" ? {
    * Override the inline-styles of the root element.
    */
   style: _propTypes2.default.object
-} : {};
+} : void 0;
 exports.default = RaisedButton;

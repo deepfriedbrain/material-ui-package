@@ -365,8 +365,7 @@ function getMuiTheme(muiTheme) {
     }
   }, muiTheme, {
     baseTheme: baseTheme, // To provide backward compatibility.
-    rawTheme: baseTheme // To provide backward compatibility.
-  });
+    rawTheme: baseTheme });
 
   var transformers = [_autoprefixer2.default, _rtl2.default, _callOnce2.default].map(function (t) {
     return t(muiTheme);
